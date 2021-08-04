@@ -19,7 +19,10 @@ router.get('/', (req, res, next) => {
 User.get(req.query)
   .then(user => {
     res.status(200).json(user)
-  })
+  }) 
+  .catch(error => {
+    next(error)
+  });
 });
 
 router.get('/:id', validateUserId, (req, res) => {
