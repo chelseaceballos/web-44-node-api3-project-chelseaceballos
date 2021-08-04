@@ -1,5 +1,5 @@
 // const Posts = require('../posts/posts-model');
-const e = require('express');
+const express = require('express');
 const User = require('../users/users-model');
 
 function logger(req, res, next) {
