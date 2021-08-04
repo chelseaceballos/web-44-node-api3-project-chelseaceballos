@@ -10,7 +10,7 @@ const {
   validateUser,
   validatePost,
 } = require('../middleware/middleware');
-const { json } = require('express');
+
 
 
 const router = express.Router();
